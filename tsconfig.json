@@ -1,0 +1,32 @@
+{
+  "files": [
+    "./ai.ts",
+    "./main.ts",
+    "./daily_rewards.ts",
+    "./messages.ts",
+    "./match_handler.ts",
+    "./match_rpc.ts"
+  ],
+  // "compilerOptions": {
+  //   "target": "es5",
+  //   "typeRoots": [
+  //     // "./node_modules",
+  //     // "@types/nakama-project-template"
+  //   ],
+  //   "outFile": "./build/index.js",
+  //   "strict": true,
+  //   "esModuleInterop": true,
+  //   "skipLibCheck": true,
+  //   "forceConsistentCasingInFileNames": true
+  // }
+  "compilerOptions": {
+    "typeRoots": ["./node_modules/@types", "./node_modules/@heroiclabs/nakama-runtime"],
+    "types": ["nakama-runtime"],
+    "module": "commonjs",
+    "target": "es6",
+    "outDir": "./build",
+    "strict": true,
+    "skipLibCheck": true,
+  },
+  "include": ["**/*.ts"]
+}
